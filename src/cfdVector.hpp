@@ -136,3 +136,25 @@ inline cfdVector<T1> operator*(const T2 &s, const cfdVector<T1> &v)
     }
     return res;
 }
+
+template <typename T1>
+inline cfdVector<T1> operator+(cfdVector<T1> &v1, cfdVector<T1> &v2)
+{
+    assert(v1.dim == v2.dim);
+    auto res = cfdVector<T1>(v1.dim);
+    for(int i =0; i < v1.dim; i++){
+        res[i] = v1[i] + v2[i];
+    }
+    return res;
+}
+
+template <typename T1>
+inline cfdVector<T1> operator-(cfdVector<T1> &v1, cfdVector<T1> &v2)
+{
+    assert(v1.dim == v2.dim);
+    auto res = cfdVector<T1>(v1.dim);
+    for(int i =0; i < v1.dim; i++){
+        res[i] = v1[i] - v2[i];
+    }
+    return res;
+}

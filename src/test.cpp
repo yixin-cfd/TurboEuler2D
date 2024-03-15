@@ -25,5 +25,8 @@ int main(int argc, char* argv[]){
     cout << vec3 <<endl;
     auto vec4 = cross(vec1, vec2);
     cout << vec4<<endl;
+    cout << "vec3: " << vec3<<endl;
+    cout << "vec3 + vec3: " << (vec3 + vec3) << endl; 
+    cout << "vec3 - vec3: " << (vec3 - vec3) << endl; 
     return 0;
 }
