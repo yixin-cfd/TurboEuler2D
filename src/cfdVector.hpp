@@ -18,7 +18,7 @@ public:
     T &operator[](int i);                                                                                 // 取值
     const T &operator[](int i) const;                                                                     //
     void setValue(std::vector<T> &&data);                                                                 // 赋值
-    int d() { return this->dim; };                                                                        // 取得维度
+    int d()const { return this->dim; } ;                                                                        // 取得维度
 
     cfdVector<T> &operator=(const cfdVector<T> &other); // 复制
 

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Euler.dir/src/main.cpp.o"
   "CMakeFiles/Euler.dir/src/main.cpp.o.d"
+  "CMakeFiles/Euler.dir/src/property.cpp.o"
+  "CMakeFiles/Euler.dir/src/property.cpp.o.d"
   "CMakeFiles/Euler.dir/src/test.cpp.o"
   "CMakeFiles/Euler.dir/src/test.cpp.o.d"
   "Euler"

@@ -153,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/property.o: src/property.cpp.o
+.PHONY : src/property.o
+
+# target to build an object file
+src/property.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/src/property.cpp.o
+.PHONY : src/property.cpp.o
+
+src/property.i: src/property.cpp.i
+.PHONY : src/property.i
+
+# target to preprocess a source file
+src/property.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/src/property.cpp.i
+.PHONY : src/property.cpp.i
+
+src/property.s: src/property.cpp.s
+.PHONY : src/property.s
+
+# target to generate assembly for a file
+src/property.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/src/property.cpp.s
+.PHONY : src/property.cpp.s
+
 src/test.o: src/test.cpp.o
 .PHONY : src/test.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/property.o"
+	@echo "... src/property.i"
+	@echo "... src/property.s"
 	@echo "... src/test.o"
 	@echo "... src/test.i"
 	@echo "... src/test.s"

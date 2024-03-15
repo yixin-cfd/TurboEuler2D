@@ -81,12 +81,12 @@ clean: CMakeFiles/Euler.dir/clean
 CMakeFiles/Euler.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euler.dir/build.make CMakeFiles/Euler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yixin/Data/CFD/Project/TurboEuler2D/build/CMakeFiles --progress-num=1,2,3 "Built target Euler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yixin/Data/CFD/Project/TurboEuler2D/build/CMakeFiles --progress-num=1,2,3,4 "Built target Euler"
 .PHONY : CMakeFiles/Euler.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Euler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yixin/Data/CFD/Project/TurboEuler2D/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yixin/Data/CFD/Project/TurboEuler2D/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Euler.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yixin/Data/CFD/Project/TurboEuler2D/build/CMakeFiles 0
 .PHONY : CMakeFiles/Euler.dir/rule

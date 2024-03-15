@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/Euler.dir/src/main.cpp.o CMakeFiles/Euler.dir/src/test.cpp.o -o Euler 
+/usr/bin/c++ -g CMakeFiles/Euler.dir/src/main.cpp.o CMakeFiles/Euler.dir/src/property.cpp.o CMakeFiles/Euler.dir/src/test.cpp.o -o Euler 

@@ -1,12 +1,13 @@
 #include <iostream>
 
 #include "cfdVector.hpp"
+#include "fluid_state.hpp"
 using namespace std;
 
 int main(int argc, char* argv[]){
     std::cout <<" Euler !" <<std::endl;
 
-    /*------------------test ds.hpp------------------------*/
+    /*------------------test cfdVector.hpp------------------------*/
 
     auto vec1 = cfdVector<double>(3);
     std::cout << vec1 << std::endl;
@@ -28,5 +29,18 @@ int main(int argc, char* argv[]){
     cout << "vec3: " << vec3<<endl;
     cout << "vec3 + vec3: " << (vec3 + vec3) << endl; 
     cout << "vec3 - vec3: " << (vec3 - vec3) << endl; 
+    /*------------------test fluid_state.hpp------------------------*/
+    auto V = cfdVector<double>(4);
+    V.setValue(std::vector{1.,2.0,3.,4.});
+    cout << "V: "<< V<<endl;
+    auto e = E(V);
+    cout << "E: " << e << endl;
+    auto h = H(V);
+    cout << "H: " << h << endl;
+    cout << " V: " << V << endl;
+    auto U = convV_U(V);
+    cout << "U: " << U << endl;
+    V = convU_V(U);
+    cout << " V: " << V << endl;
     return 0;
 }
