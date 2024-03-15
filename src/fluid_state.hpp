@@ -15,6 +15,9 @@ cfdVector<T> convU_V(const cfdVector<T> &U);
 template<typename T>
 cfdVector<T> convV_U(const cfdVector<T> &V);
 
+template<typename T>
+T speed_sound(const T&P, const T &rho);
+
 
 template<typename T>
 T E(const cfdVector<T> &V){
@@ -67,4 +70,10 @@ inline cfdVector<T> convV_U(const cfdVector<T> &V)
     U[2] = rho*v;
     U[3] = rho*E(V);
     return U;
+}
+
+template <typename T>
+inline T speed_sound(const T &P, const T &rho)
+{
+    return sqrt((Gamma*P)/rho);
 }

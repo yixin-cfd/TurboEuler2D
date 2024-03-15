@@ -42,5 +42,8 @@ int main(int argc, char* argv[]){
     cout << "U: " << U << endl;
     V = convU_V(U);
     cout << " V: " << V << endl;
+
+    auto a = speed_sound(1.0, 1.0);
+    cout <<"a: " << a <<endl;
     return 0;
 }
